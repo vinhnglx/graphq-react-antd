@@ -377,11 +377,27 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 ```
 
+- Rename `app.css` to `app.scss` and load antd style
 
+```scss
+/* This file is for your main application css. */
+
+@import 'node_modules/antd/dist/antd';
+
+.ant-layout {
+  min-height: 100vh;
+}
+
+.logo {
+  width: 120px;
+  height: 31px;
+  background: rgba(255,255,255,.2);
+  margin: 16px 24px 16px 0;
+  float: left;
+}
+```
 
 ## Conclusion
-
-
 
 Now the app can run on React and Apollo as GraphQL client and Absinthe as GraphQL for backend.
 
