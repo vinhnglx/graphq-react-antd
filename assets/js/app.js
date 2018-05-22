@@ -2,6 +2,8 @@ import 'babel-polyfill'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom'
+import { ApolloProvider } from 'react-apollo'
+import client from './client'
 
 const App = () => (
   <Switch>
@@ -12,7 +14,9 @@ const App = () => (
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
     <BrowserRouter>
-      <App />
+      <ApolloProvider client={client}>
+        <App />
+      </ApolloProvider>
 
     </BrowserRouter>,
     document.getElementById('root'),
