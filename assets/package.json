@@ -6,13 +6,31 @@
     "watch": "brunch watch --stdin"
   },
   "dependencies": {
+    "antd": "^3.4.3",
+    "apollo-boost": "^0.1.4",
+    "babel-polyfill": "^6.26.0",
+    "graphql": "^0.13.2",
+    "graphql-tag": "^2.9.1",
+    "lodash": "^4.17.10",
+    "moment": "^2.22.1",
     "phoenix": "file:../deps/phoenix",
-    "phoenix_html": "file:../deps/phoenix_html"
+    "phoenix_html": "file:../deps/phoenix_html",
+    "react": "^16.3.2",
+    "react-apollo": "^2.1.3",
+    "react-dom": "^16.3.2",
+    "react-router-dom": "^4.2.2",
+    "recompose": "^0.27.0"
   },
   "devDependencies": {
     "babel-brunch": "6.1.1",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-import": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
     "brunch": "2.10.9",
     "clean-css-brunch": "2.10.0",
+    "sass-brunch": "^2.10.4",
     "uglify-js-brunch": "2.10.0"
   }
 }
